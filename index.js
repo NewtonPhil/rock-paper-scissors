@@ -32,18 +32,21 @@ function getPlayerChoice() {
     }
 }
 
+//    2.4 store return of getPlayerChoice function in let playerSelection
 let playerSelection = getPlayerChoice();
 console.log(playerSelection);
 
 
 // 3. function playRound = compare playerSelection with computerSelection to determine hand winner
-function playRound(playerSelection, computerSelection) {
+function playRound(computerSelection, playerSelection) {
     
 //    3.1 compare player and computer hand to alert winner
-    if (playerSelection === "rock" && computerSelection === "rock");
+    if (computerSelection === playerSelection) { 
+    alert("It's a tie. You both picked rock!"); }
     
 }
 
+playRound();
 
 
     
