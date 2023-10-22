@@ -12,6 +12,9 @@ function getComputerChoice() {
     return computerSelection;                        
 }
 
+//    1.4 store return of getComputerChoice function in let computerSelection
+let computerSelection = getComputerChoice();
+console.log(computerSelection);
 
 // 2. function getPlayerChoice = store players selection from rock, paper, or scissors in let playerSelection
 //    2.1 Prompt player to input rock, paper, or scissors and store in playerSelection
@@ -22,19 +25,25 @@ function getPlayerChoice() {
 
 // 2.2 If the player inputs valid selection, return it to playerSelection
     if (playerSelection === "rock" || playerSelection === "paper" || playerSelection === "scissors") {
-        console.log(playerSelection);
+        return playerSelection;
 //    2.3 If an invalid input, send player a message saying so        
     } else {
-        alert("Invalid input");
+        alert("Invalid input. Try rock, paper, or scissors!");
     }
 }
 
-getPlayerChoice()
+let playerSelection = getPlayerChoice();
+console.log(playerSelection);
 
 
+// 3. function playRound = compare playerSelection with computerSelection to determine hand winner
 function playRound(playerSelection, computerSelection) {
     
+//    3.1 compare player and computer hand to alert winner
+    if (playerSelection === "rock" && computerSelection === "rock");
+    
 }
+
 
 
     
