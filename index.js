@@ -30,7 +30,7 @@ function playRound(computerSelection, playerSelection) {
     
 
     if (computerSelection === playerSelection) {
-        return "Tie!";
+        return `Tie! You both picked ${playerSelection}!`;
     } 
 
     else if (computerSelection === "rock") {
